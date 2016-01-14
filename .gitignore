@@ -26,3 +26,7 @@
 *.exe
 *.out
 *.app
+
+swc/Debug
+swc/Release
+swc/swc.txt

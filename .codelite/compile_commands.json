@@ -1,0 +1,121 @@
+[{
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\main.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\main.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\main.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CApp.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CApp.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CApp.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CChildWnd.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CChildWnd.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CChildWnd.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CComboBoxExt.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CComboBoxExt.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CComboBoxExt.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CContainer.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CContainer.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CContainer.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CControlBarButton.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CControlBarButton.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CControlBarButton.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CFolder.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CFolder.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CFolder.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CFrame.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CFrame.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CFrame.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CFrameMDI.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CFrameMDI.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CFrameMDI.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CHeaderView.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CHeaderView.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CHeaderView.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CHookMenu.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CHookMenu.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CHookMenu.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CMainFrame.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CMainFrame.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CMainFrame.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CMenuSpawn.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CMenuSpawn.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CMenuSpawn.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CMiniDock.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CMiniDock.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CMiniDock.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CMiniFrame.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CMiniFrame.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CMiniFrame.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CMMedia.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CMMedia.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CMMedia.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\COutLook.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\COutLook.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\COutLook.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CSplitter.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CSplitter.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CSplitter.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CTabbed.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CTabbed.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CTabbed.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CToolBarCtrl.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CToolBarCtrl.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CToolBarCtrl.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CToolButton.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CToolButton.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CToolButton.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CWin.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CWin.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CWin.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\CWorkTab.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\CWorkTab.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\CWorkTab.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\debug.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\debug.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\debug.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\DockManager.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\DockManager.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\DockManager.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\main_mdi.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\main_mdi.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\main_mdi.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\main_outlookdemo.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\main_outlookdemo.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\main_outlookdemo.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\main_pwcstudio.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\main_pwcstudio.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\main_pwcstudio.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\NewBValArray.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\NewBValArray.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\NewBValArray.cpp.o  -g  -O0  -Wall -I. -I."
+ }, {
+  "file": "D:\\CodeLiteWorkspace\\swc\\swc\\swc.cpp",
+  "directory": "D:\\CodeLiteWorkspace\\swc\\swc",
+  "command": "D:/mingw32/bin/g++.exe -c D:\\CodeLiteWorkspace\\swc\\swc\\swc.cpp -o D:\\CodeLiteWorkspace\\swc\\swc\\swc.cpp.o  -g  -O0  -Wall -I. -I."
+ }]
