@@ -147,7 +147,7 @@
       <File Name="mdi/toolbar2.bmp"/>
       <File Name="mdi/toolbar_.bmp"/>
       <File Name="mdi/WinClass.ico"/>
-      <File Name="mdi/WinClass.rc" ExcludeProjConfig=""/>
+      <File Name="mdi/WinClass.rc" ExcludeProjConfig="Debug"/>
     </VirtualDirectory>
     <VirtualDirectory Name="outlookdemo">
       <File Name="outlookdemo/bitmap1.bmp"/>
@@ -182,6 +182,7 @@
       <File Name="pwcstudio/WinClass.ico"/>
       <File Name="pwcstudio/WinClass.rc" ExcludeProjConfig="Debug"/>
     </VirtualDirectory>
+    <File Name="swc.rc"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

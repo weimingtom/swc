@@ -35,4 +35,4 @@ swc/*.project
 
 .clang/
 .codelite/
-./Makefile
+Makefile
