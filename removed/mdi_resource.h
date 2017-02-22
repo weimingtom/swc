@@ -1,7 +1,5 @@
 #pragma once
 
-#define IDB_GUI_DOCKBAR 110
-
 #define IDC_MYICON                      2
 #define IDD_WINCLASS_DIALOG             102
 #define IDD_ABOUTBOX                    103
@@ -21,26 +19,16 @@
 #define IDr_BITMAP1                     146
 #define IDB_TOOLBAR                     150
 #define IDR_RS1                         152
-#define IDD_OUTOOLKDEMO_DIALOG          102
-#define IDI_OUTOOLKDEMO                 107
-#define IDC_OUTOOLKDEMO                 109
-#define IDB_GUI_DOCKBAR                 110
-#define IDB_BITMAP1                     129
-#define IDB_Toolbox                     133
-#define IDB_TOOLBOX                     133
-#define IDB_DB                          134
-#define IDB_TREE                        134
 #define ID_TOOLBAR                      551
-
 #define IDC_COMBONOMBRE                 1000
 #define IDC_GROUPBOX                    1001
 #define IDC_EDITAR                      1002
 #define IDC_LISTA                       1004
 #define IDC_EDIT                        1006
-
 #define ID_MENU_NEW                     32771
 #define ID_FILE_NEW                     32773
 #define ID_FILE_OPEN                    32774
+#define ID_FILE_SAVE                    32775
 #define ID_EDIT_CUT                     32776
 #define ID_STATUSBAR                    32777
 #define ID_FILE_CLOSE                   32778
@@ -58,37 +46,4 @@
 #define ID_BUTTON32790                  32790
 #define IDM_OPEN1                       32791
 #define IDM_OPEN2                       32792
-#define ID_FILE_PRINTER                 32772
-#define ID_FILE_SAVE                    32773
-#define ID_FIND                         32773
-#define ID_NEW_MAIL                     32777
-#define ID_NEW_FAX                      32778
-#define ID_NEW_POST_FOLDER              32779
-#define ID_NEW_FOLDER                   32780
-#define ID_NEW_SHORTCUT                 32781
-#define ID_NEW_APPOINMENT               32782
-#define ID_NEW_MEETING                  32783
-#define ID_NEW_CONTRACT                 32784
-#define ID_NEW_DISTRIBUTION_LIST        32785
-#define ID_NEW_TASK                     32786
-#define ID_NEW_TASK_REQUEST             32787
-#define ID_NEW_JOURNAL_ENTRY            32788
-#define ID_NEW_NOTE                     32789
-#define ID_MAIL_SEND                    32790
-#define ID_MAIL_SAVE                    32791
-#define ID_MAIL_SAVE_ATTACHMENTS        32793
-#define ID_MAIL_SAVE_STATIONERY         32794
-#define ID_MAIL_DELETE                  32795
-#define ID_MAIL_MOVE_TO_FOLDER          32796
-#define ID_MAIL_COPY_TO_FOLDER          32797
-#define ID_MAIL_PROPERTIES              32800
-#define ID_MAIL_CLOSE                   32801
-#define ID_MAIL_SPELL                   32807
-#define ID_MAIL_CHECK_NAMES             32808
-#define ID_ADDRESS_BOOK                 32809
-#define ID_VIEW_CUSTOMIZE               32811
-#define ID_ADDRESBOOK                   32812
-#define ID_APP_ABOUT                    32774
-
 #define IDC_STATIC                      -1
-

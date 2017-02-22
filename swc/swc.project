@@ -141,13 +141,11 @@
       <File Name="mdi/build.bmp"/>
       <File Name="mdi/icon1.ico"/>
       <File Name="mdi/Pretty.manifest"/>
-      <File Name="mdi/resource.h"/>
       <File Name="mdi/SMALL.ICO"/>
       <File Name="mdi/toolbar1.bmp"/>
       <File Name="mdi/toolbar2.bmp"/>
       <File Name="mdi/toolbar_.bmp"/>
       <File Name="mdi/WinClass.ico"/>
-      <File Name="mdi/WinClass.rc" ExcludeProjConfig="Debug"/>
     </VirtualDirectory>
     <VirtualDirectory Name="outlookdemo">
       <File Name="outlookdemo/bitmap1.bmp"/>
@@ -155,8 +153,6 @@
       <File Name="outlookdemo/DB.bmp"/>
       <File Name="outlookdemo/gui_dock.bmp"/>
       <File Name="outlookdemo/OutoolkDemo.ICO"/>
-      <File Name="outlookdemo/OutoolkDemo.rc" ExcludeProjConfig="Debug"/>
-      <File Name="outlookdemo/resource.h"/>
       <File Name="outlookdemo/SMALL.ICO"/>
       <File Name="outlookdemo/toolbar1.bmp"/>
       <File Name="outlookdemo/Toolbox.bmp"/>
