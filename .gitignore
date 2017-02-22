@@ -30,6 +30,9 @@
 swc/Debug
 swc/Release
 swc/swc.txt
+swc/*.mk
+swc/*.project
 
 .clang/
 .codelite/
+./Makefile

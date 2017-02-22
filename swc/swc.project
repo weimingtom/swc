@@ -147,7 +147,7 @@
       <File Name="mdi/toolbar2.bmp"/>
       <File Name="mdi/toolbar_.bmp"/>
       <File Name="mdi/WinClass.ico"/>
-      <File Name="mdi/WinClass.rc"/>
+      <File Name="mdi/WinClass.rc" ExcludeProjConfig=""/>
     </VirtualDirectory>
     <VirtualDirectory Name="outlookdemo">
       <File Name="outlookdemo/bitmap1.bmp"/>
@@ -155,7 +155,7 @@
       <File Name="outlookdemo/DB.bmp"/>
       <File Name="outlookdemo/gui_dock.bmp"/>
       <File Name="outlookdemo/OutoolkDemo.ICO"/>
-      <File Name="outlookdemo/OutoolkDemo.rc"/>
+      <File Name="outlookdemo/OutoolkDemo.rc" ExcludeProjConfig="Debug"/>
       <File Name="outlookdemo/resource.h"/>
       <File Name="outlookdemo/SMALL.ICO"/>
       <File Name="outlookdemo/toolbar1.bmp"/>
@@ -180,7 +180,7 @@
       <File Name="pwcstudio/toolbar2.bmp"/>
       <File Name="pwcstudio/toolbar_.bmp"/>
       <File Name="pwcstudio/WinClass.ico"/>
-      <File Name="pwcstudio/WinClass.rc"/>
+      <File Name="pwcstudio/WinClass.rc" ExcludeProjConfig="Debug"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <Settings Type="Executable">

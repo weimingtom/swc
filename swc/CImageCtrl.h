@@ -28,6 +28,10 @@ public:
 		
 		BITMAP		bmp;
 		HGDIOBJ hBmp=::LoadImage(theApp->GetInstance(),MAKEINTRESOURCE(uTb),IMAGE_BITMAP,0,0,LR_DEFAULTSIZE|LR_CREATEDIBSECTION);
+        //FIXME:
+        //if (hBmp == NULL) {
+        //    return FALSE;
+        //}
 		::GetObject(hBmp, sizeof(BITMAP), &bmp);
 		RGBTRIPLE *pRbg= (RGBTRIPLE*) (bmp.bmBits);
 		if (nBtnIni == -1)

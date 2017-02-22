@@ -6,7 +6,11 @@
 #include "swc.h"
 #include "resource.h"
 
+#if __MINGW32_MAJOR_VERSION > 3
+#ifndef MINGW_VERSION_4
 #define MINGW_VERSION_4 1
+#endif
+#endif
 
 /*FIXME: */
 #ifndef TTM_SETTITLE
