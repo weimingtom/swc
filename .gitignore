@@ -30,3 +30,6 @@
 swc/Debug
 swc/Release
 swc/swc.txt
+
+.clang/
+.codelite/
