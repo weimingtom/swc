@@ -1,0 +1,150 @@
+#include "resource.h"
+#include "windows.h"
+
+// Icon
+IDI_WINCLASS_MDI            ICON                    "WinClass.ICO"
+IDI_SMALL_MDI               ICON                    "SMALL.ICO"
+
+// Menu
+IDC_WINCLASS_MDI MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW_MDI
+        MENUITEM "&Open\tCtrl+O",               ID_FILE_OPEN_MDI
+        MENUITEM "&Save ",                      ID_FILE_SAVE_MDI
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_EXIT_MDI
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Cut",                        ID_EDIT_CUT_MDI
+        MENUITEM "&ToolBar",                    ID_TOOLBAR_MDI
+        MENUITEM "&Status Bar",                 ID_STATUSBAR_MDI
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT_MDI
+    END
+END
+
+IDR_MENUHELLO_MDI MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW_MDI
+        POPUP "&Open...\tCtrl+O"
+        BEGIN
+            MENUITEM "Open1",                       IDM_OPEN1_MDI
+            MENUITEM "&Open2",                      IDM_OPEN2_MDI
+        END
+        MENUITEM "&Close",                      ID_FILE_CLOSE_MDI
+        MENUITEM "&Save",                       ID_FILE_SAVE_MDI
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_EXIT_MDI
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&ToolBar",                    ID_TOOLBAR_MDI
+        MENUITEM "&Status Bar",                 ID_STATUSBAR_MDI, GRAYED
+        MENUITEM "Cut",                         ID_EDIT_CUT_MDI
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_BOTONROJO_MDI
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE_MDI
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ_MDI
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE_MDI
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT_MDI
+    END
+END
+
+// Accelerator
+IDC_WINCLASS_MDI ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT_MDI,              ASCII,  ALT
+    "/",            IDM_ABOUT_MDI,              ASCII,  ALT
+END
+
+// Dialog
+IDD_ABOUTBOX_MDI DIALOG  22, 17, 211, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,56,50,17,WS_GROUP
+    LTEXT           "Simple MDI test",IDC_STATIC,15,19,67,10
+    EDITTEXT        IDC_EDIT_MDI,87,16,111,13,ES_AUTOHSCROLL
+END
+
+// Toolbar
+IDR_TOOLBAR_MDI TOOLBAR  18, 16
+BEGIN
+    BUTTON      ID_FILE_NEW_MDI
+    BUTTON      ID_FILE_OPEN_MDI
+    BUTTON      ID_FILE_SAVE_MDI
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT_MDI
+END
+
+IDR_TOOLBAR1_MDI TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_BOTONNEGRO_MDI
+    SEPARATOR
+    BUTTON      ID_BOTONROJO_MDI
+    BUTTON      ID_BUTTON32785_MDI
+    BUTTON      ID_BUTTON32786_MDI
+    SEPARATOR
+    BUTTON      ID_BUTTON32787_MDI
+    BUTTON      ID_BUTTON32788_MDI
+    BUTTON      ID_TOOLBAR_MDI
+    BUTTON      ID_BUTTON32790_MDI
+END
+
+IDR_SYSTEMBAR_MDI TOOLBAR  16, 15
+BEGIN
+    BUTTON      61728
+    BUTTON      61472
+    BUTTON      61488
+    BUTTON      61536
+END
+
+// Bitmap
+IDR_TOOLBAR_MDI             BITMAP                  "toolbar1.bmp"
+IDR_TOOLBAR1_MDI            BITMAP                  "toolbar_.bmp"
+IDR_SYSTEMBAR_MDI           BITMAP                  "toolbar2.bmp"
+
+// String Table
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE_MDI           "SWC MDI"
+    IDS_HELLO_MDI               "Hello World!"
+    IDC_WINCLASS_MDI            "SWC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MENU_NEW_MDI             "New\nNew"
+    ID_FILE_NEW_MDI             "Crea un nuevo documento\nNuevo"
+    ID_FILE_OPEN_MDI            "Abre un documento ya existente\nAbrir"
+    ID_FILE_SAVE_MDI            "Guarda el documento activo\nGuardar"
+    ID_EDIT_CUT_MDI             "Cut\nCut"
+    ID_FILE_CLOSE_MDI           "Close the active document\nClose"
+    ID_WINDOW_NEW_MDI           "Open another window for the active document\nNew Window"
+    ID_WINDOW_CASCADE_MDI       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ_MDI     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_ARRANGE_MDI       "Arrange icons at the bottom of the window\nArrange Icons"
+END
+
+// Icon
+IDR_MENUHELLO_MDI           ICON                    "icon1.ico"
+
+// Bitmap
+IDr_BITMAP1_MDI             BITMAP                  "bitmap1.bmp"
+IDB_TOOLBAR_MDI             BITMAP                  "bmp00001.bmp"
+
+// RS
+IDR_RS1_MDI                 RS                      "Pretty.manifest"
