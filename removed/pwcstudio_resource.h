@@ -2,8 +2,8 @@
 // Microsoft Visual C++ generated include file.
 // Used by WinClass.rc
 //
-#define ID_FILE_PRINT                   0
-#define ID_FILE_PRINT_PREVIEW           0
+#define ID_FILE_PRINT_PWC                   0
+#define ID_FILE_PRINT_PREVIEW_PWC           0
 #define IDC_MYICON_PWC                      2
 #define IDD_WINCLASS_DIALOG_PWC             102
 #define IDD_ABOUTBOX_PWC                    103
@@ -13,14 +13,14 @@
 #define IDI_SMALL_PWC                       108
 #define IDC_WINCLASS_PWC                    109
 #define IDC_BASEMENU                    109
-#define IDB_GUI_DOCKBAR                 110
+#define IDB_GUI_DOCKBAR_PWC                 110
 #define IDR_MAINFRAME_OL                   128
 #define IDR_TOOLBAR_PWC                     129
 #define IDR_MAINTOOLBAR                 129
 #define IDR_STANDAR                     129
 #define IDR_MENUHELLO_PWC                   132
-#define IDB_Toolbox                     133
-#define IDB_TOOLBOX                     133
+#define IDB_Toolbox_PWC                     133
+#define IDB_TOOLBOX_PWC                     133
 #define IDR_TOOLBAR1_PWC                    134
 #define IDR_EDITTOOLBAR                 134
 #define IDI_ICONDOC_PWC                     139
@@ -35,7 +35,7 @@
 #define IDI_ICON1                       159
 #define IDB_STANDAR                     161
 #define IDB_TREEEXPLORER                162
-#define IDB_DB                          163
+#define IDB_DB_PWC                          163
 #define IDB_OUTLOOK                     164
 #define IDR_MENUOPTION                  165
 #define ID_TOOLBAR_PWC                      551
@@ -65,7 +65,7 @@
 #define ID_DUMMY_GO                     32791
 #define IDM_OPEN2                       32792
 #define ID_DUMMY_SELECT_ACTIVE_CONFIGURATION 32794
-#define ID_COMBOBOX                     32797
+#define ID_COMBOBOX_PWC                     32797
 #define ID_DUMMY_REBUILD_ALL            32798
 #define ID_DUMMY_CLEAN                  32799
 #define ID_BUTTON32799                  32799
@@ -78,7 +78,7 @@
 #define ID_cUT1                         32806
 #define ID_OPTION2                      32807
 #define ID_FILE_CLOSE_PWC                   32808
-#define ID_FILE_SAVE_AS                 32809
+#define ID_FILE_SAVE_AS_PWC                 32809
 #define ID_PRINT                        32810
 #define ID_VIEW_MAINTOOLBAR             32811
 #define ID_VIEWCOMPILEBAR               32812
@@ -89,7 +89,7 @@
 #define ID_VIEWHELPWINDOW               32816
 #define ID_VIEWTOOLBOX                  32817
 #define ID_VIEWCLASSVIEW                32818
-#define ID_TOOLS_ENTRY                  32819
+#define ID_TOOLS_ENTRY_PWC                  32819
 #define ID_VIEW_OUTLOOKWINDOW           32819
 #define ID_VIEW_SOLUTIONEXPLORER        32820
 #define ID_VIEW_WORTABDEMO              32821
@@ -101,12 +101,12 @@
 #define ID_VIEW_APP_LOOK                32950
 #define ID_FILE_PRINT_SETUP             57609
 #define ID_FILE_MRU_FILE1               57616
-#define ID_EDIT_COPY                    57634
+#define ID_EDIT_COPY_PWC                    57634
 #define ID_EDIT_FIND                    57636
-#define ID_EDIT_PASTE                   57637
-#define ID_EDIT_UNDO                    57643
-#define ID_EDIT_REDO                    57644
-#define ID_APP_ABOUT                    57664
+#define ID_EDIT_PASTE_PWC                   57637
+#define ID_EDIT_UNDO_PWC                    57643
+#define ID_EDIT_REDO_PWC                    57644
+#define ID_APP_ABOUT_PWC                    57664
 #define ID_APP_EXIT                     57665
 #define ID_VIEW_STATUS_BAR              59393
 #define ID_CANCEL                       61536

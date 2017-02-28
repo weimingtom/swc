@@ -89,7 +89,7 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	m_ToolBar.LoadToolBar(IDR_TOOLBAR_OL);
 	m_ToolBar.AddTrueColor(IDB_TOOLBAR_OL,TB_SETIMAGELIST);
-	m_ToolBar.CreateCombo(&m_comboDebug,ID_COMBOBOX,150,WS_CHILD|WS_VISIBLE|CBS_DROPDOWN  | 
+	m_ToolBar.CreateCombo(&m_comboDebug,ID_COMBOBOX_OL,150,WS_CHILD|WS_VISIBLE|CBS_DROPDOWN  | 
 							WS_VSCROLL | CBS_HASSTRINGS |CBS_OWNERDRAWVARIABLE);
 
 	AddBar(&m_ToolBar, IDR_TOOLBAR_OL);
@@ -136,7 +136,7 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	
 
-	out2.SetImageList(IDB_BITMAP1, 32, 0, RGB(255,0,0));
+	out2.SetImageList(IDB_BITMAP1_OL, 32, 0, RGB(255,0,0));
 	out2.AddItem(IDO_OUTODAY,"Home",7);
 	out2.AddItem(IDO_CALENDARIO,"Calendar",1);
 	out2.AddItem(IDO_CONTACTO,"Contacts",2);
@@ -183,10 +183,10 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	//--------------------populate the tree
 
-	if(!Image.CreateColor(IDB_TREE)) 
+	if(!Image.CreateColor(IDB_TREE_OL)) 
 			return FALSE;
 	FolderList.SetImageList(Image.GetImageHandle(),TVSIL_NORMAL);
-	//FolderList.SetImageList(IDB_TREE, 32, 0, RGB(255,0,0));
+	//FolderList.SetImageList(IDB_TREE_OL, 32, 0, RGB(255,0,0));
 	HTREEITEM hRoot = FolderList.InsertItem (_T("Outlook Today"), 0, 0);
 		
 		FolderList.InsertItem (_T("Calendar"), 1, 1, hRoot);
@@ -203,7 +203,7 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	//--------------------populate the tree2
 
 	tc.SetImageList(Image.GetImageHandle(),TVSIL_NORMAL);
-	//FolderList.SetImageList(IDB_TREE, 32, 0, RGB(255,0,0));
+	//FolderList.SetImageList(IDB_TREE_OL, 32, 0, RGB(255,0,0));
 	HTREEITEM hRoot1 = tc.InsertItem (_T("My PC"), 9, 9);
 		
 		tc.InsertItem (_T("Program Files"), 10, 10, hRoot1);
@@ -231,14 +231,14 @@ int CAppMain::InitInstance()
 
 	m_WinMain=(CFrame*)new CWinFrame; 
 
-	if (m_WinMain->LoadFrame(IDC_OUTOOLKDEMO)== FALSE)
+	if (m_WinMain->LoadFrame(IDC_OUTOOLKDEMO_OL)== FALSE)
 		return -1;
-	LoadMenu((LPCTSTR)IDC_OUTOOLKDEMO);
+	LoadMenu((LPCTSTR)IDC_OUTOOLKDEMO_OL);
 	m_WinMain->SetWindowPos(NULL,50,50,600,400 ,SWP_SHOWWINDOW);
 	
 	m_WinMain->ShowWindow();
 	m_WinMain->UpdateWindow();
-	hAccelTable = LoadAccelerators( (LPCTSTR)IDC_OUTOOLKDEMO);
+	hAccelTable = LoadAccelerators( (LPCTSTR)IDC_OUTOOLKDEMO_OL);
 	return Run();	
 }
 

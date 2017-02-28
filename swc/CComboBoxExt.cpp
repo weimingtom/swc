@@ -13,10 +13,10 @@ CComboBoxExt::CComboBoxExt()
 	m_bOverCombo=FALSE;
 	m_Font.CreateFont(-11,2,0,0,FW_BOLD,0,0,0,0,1,2,1,34,"MS Sans Serif");
 	m_bPress=FALSE;
-	m_imgArrow.Create(IDB_GUI_DOCKBAR,9,10,RGB(255,0,255));
+	m_imgArrow.Create(IDB_GUI_DOCKBAR_OL,9,10,RGB(255,0,255));
 	CBitmap cbmp;
 	BITMAP bmp;
-	cbmp.LoadBitmap(theApp->GetInstance(),(LPCTSTR)IDB_GUI_DOCKBAR);
+	cbmp.LoadBitmap(theApp->GetInstance(),(LPCTSTR)IDB_GUI_DOCKBAR_OL);
 	cbmp.GetBitmap(&bmp);
 	mHeight=CPoint(bmp.bmWidth,bmp.bmHeight);
 	m_bFondoXp=FALSE;

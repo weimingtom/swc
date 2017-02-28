@@ -123,7 +123,7 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	AddBar(&m_ToolBarMain, IDR_MAINTOOLBAR);
 	AddBar(&m_ToolBarEdit, IDR_BUILD);
-	m_ToolBarMain.CreateCombo(&m_comboDebug,ID_COMBOBOX,150,WS_CHILD|WS_VISIBLE|CBS_DROPDOWN  | 
+	m_ToolBarMain.CreateCombo(&m_comboDebug,ID_COMBOBOX_PWC,150,WS_CHILD|WS_VISIBLE|CBS_DROPDOWN  | 
 							WS_VSCROLL | CBS_HASSTRINGS |CBS_OWNERDRAWVARIABLE);
 	//Init Statubar 
 	SetPanelText(0,_T("Ready ") );
@@ -221,8 +221,8 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	out1.SetTypeLook(FALSE);
 	out2.SetTypeLook(FALSE);
 
-	out2.SetImageList(IDB_DB, 16, 0, RGB(255,0,0));
-	out1.SetImageList(IDB_TOOLBOX, 16, 0, RGB(255,0,0));
+	out2.SetImageList(IDB_DB_PWC, 16, 0, RGB(255,0,0));
+	out1.SetImageList(IDB_TOOLBOX_PWC, 16, 0, RGB(255,0,0));
 	out1.AddItem(IDO_POINTER,"Pointer",0);
 	out1.AddItem(IDO_LABEL,"Label",1);
 	out1.AddItem(IDO_BUTTON,"Button",2);

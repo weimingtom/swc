@@ -219,15 +219,15 @@ int CContainer::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	CToolTip.Create(GetSafeHwnd(),TTS_ALWAYSTIP);
 	CToolTip.Activate(TRUE);
 	CToolTip.BringWindowToTop();
-	if (!m_img.Create(IDB_GUI_DOCKBAR,9,11,RGB(255,0,255)))
+	if (!m_img.Create(IDB_GUI_DOCKBAR_OL,9,11,RGB(255,0,255)))
 	{
 		return -1;
 	}
 
 	m_CloseBtn.SetData(5,_T("Close"));
-	m_CloseBtn.SetImageList(IDB_GUI_DOCKBAR,9,10,RGB(255,0,255));
+	m_CloseBtn.SetImageList(IDB_GUI_DOCKBAR_OL,9,10,RGB(255,0,255));
 	m_AutoHideBtn.SetData(11,_T("Auto Hide"));
-	m_AutoHideBtn.SetImageList(IDB_GUI_DOCKBAR,9,15,RGB(255,0,255));
+	m_AutoHideBtn.SetImageList(IDB_GUI_DOCKBAR_OL,9,15,RGB(255,0,255));
 	// TODO: Add your specialized creation code here
 	return 0;
 }

@@ -150,12 +150,12 @@ BEGIN
     BUTTON      ID_SAVE_ALL
     SEPARATOR
     BUTTON      ID_EDIT_CUT_PWC
-    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_COPY_PWC
     SEPARATOR
-    BUTTON      ID_EDIT_PASTE
-    BUTTON      ID_COMBOBOX
-    BUTTON      ID_EDIT_UNDO
-    BUTTON      ID_EDIT_REDO
+    BUTTON      ID_EDIT_PASTE_PWC
+    BUTTON      ID_COMBOBOX_PWC
+    BUTTON      ID_EDIT_UNDO_PWC
+    BUTTON      ID_EDIT_REDO_PWC
     BUTTON      ID_NAVIGATE
     BUTTON      ID_EDIT_FIND
 END
@@ -236,11 +236,11 @@ END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_COPY            "Copy\nCopy"
+    ID_EDIT_COPY_PWC            "Copy\nCopy"
     ID_EDIT_FIND            "Find\nFind"
-    ID_EDIT_PASTE           "Paste\nPaste"
-    ID_EDIT_UNDO            "Undo\nUndo"
-    ID_EDIT_REDO            "Redo\nRedo"
+    ID_EDIT_PASTE_PWC           "Paste\nPaste"
+    ID_EDIT_UNDO_PWC            "Undo\nUndo"
+    ID_EDIT_REDO_PWC            "Redo\nRedo"
 END
 
 STRINGTABLE 
@@ -276,7 +276,7 @@ LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
 // Bitmap
 //
 
-IDB_GUI_DOCKBAR         BITMAP                  "gui_dock.bmp"
+IDB_GUI_DOCKBAR_PWC         BITMAP                  "gui_dock.bmp"
 #endif    // Spanish resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -312,7 +312,7 @@ BEGIN
         MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN_PWC
         MENUITEM "&Close",                      ID_FILE_CLOSE_PWC
         MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE_PWC
-        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS_PWC
         MENUITEM SEPARATOR
         MENUITEM "&Print...\tCtrl+P",           32810
         MENUITEM SEPARATOR
@@ -321,11 +321,11 @@ BEGIN
     POPUP "&Edit"
     BEGIN
         MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_CUT_PWC
-        MENUITEM "&Redo",                       ID_EDIT_REDO
+        MENUITEM "&Redo",                       ID_EDIT_REDO_PWC
         MENUITEM SEPARATOR
         MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT_PWC
-        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
-        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY_PWC
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE_PWC
         MENUITEM SEPARATOR
         MENUITEM "&Find...",                    ID_EDIT_FIND
     END
@@ -391,7 +391,7 @@ IDB_BUILD               BITMAP                  "bmpbuild.bmp"
 IDB_STANDAR             BITMAP                  "bmpStandar.bmp"
 IDB_TREEEXPLORER        BITMAP                  "BmpTreeExplorer.bmp"
 133                     BITMAP                  "bmpToolbox.bmp"
-IDB_DB                  BITMAP                  "bitmapDB.bmp"
+IDB_DB_PWC                  BITMAP                  "bitmapDB.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -405,9 +405,9 @@ END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_COPY            "Copy"
-    ID_EDIT_PASTE           "Paste"
-    ID_EDIT_REDO            "Redo"
+    ID_EDIT_COPY_PWC            "Copy"
+    ID_EDIT_PASTE_PWC           "Paste"
+    ID_EDIT_REDO_PWC            "Redo"
 END
 
 STRINGTABLE 

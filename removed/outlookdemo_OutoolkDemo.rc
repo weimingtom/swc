@@ -31,7 +31,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_OUTOOLKDEMO         ICON                    "OutoolkDemo.ICO"
+IDI_OUTOOLKDEMO_OL         ICON                    "OutoolkDemo.ICO"
 IDI_SMALL_OL               ICON                    "SMALL.ICO"
 
 /////////////////////////////////////////////////////////////////////////////
@@ -39,7 +39,7 @@ IDI_SMALL_OL               ICON                    "SMALL.ICO"
 // Menu
 //
 
-IDC_OUTOOLKDEMO MENU 
+IDC_OUTOOLKDEMO_OL MENU 
 BEGIN
     POPUP "&File"
     BEGIN
@@ -98,7 +98,7 @@ END
 // Accelerator
 //
 
-IDC_OUTOOLKDEMO ACCELERATORS 
+IDC_OUTOOLKDEMO_OL ACCELERATORS 
 BEGIN
     "?",            IDM_ABOUT_OL,              ASCII,  ALT
     "/",            IDM_ABOUT_OL,              ASCII,  ALT
@@ -115,7 +115,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
 CAPTION "About"
 FONT 8, "System"
 BEGIN
-    ICON            IDI_OUTOOLKDEMO,IDC_MYICON_OL,14,9,16,16
+    ICON            IDI_OUTOOLKDEMO_OL,IDC_MYICON_OL,14,9,16,16
     LTEXT           "OutoolkDemo Version 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2003",IDC_STATIC,49,20,119,8
     DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
@@ -156,7 +156,7 @@ END
 // Bitmap
 //
 
-IDB_BITMAP1             BITMAP                  "bitmap1.bmp"
+IDB_BITMAP1_OL             BITMAP                  "bitmap1.bmp"
 IDR_TOOLBAR_OL             BITMAP                  "toolbar1.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
@@ -170,9 +170,9 @@ BEGIN
     SEPARATOR
     BUTTON      ID_FILE_PRINTER
     SEPARATOR
-    BUTTON      ID_FIND
-    BUTTON      ID_ADDRESBOOK
-    BUTTON      ID_COMBOBOX
+    BUTTON      ID_FIND_OL
+    BUTTON      ID_ADDRESBOOK_OL
+    BUTTON      ID_COMBOBOX_OL
 END
 
 
@@ -185,20 +185,20 @@ STRINGTABLE
 BEGIN
     IDS_APP_TITLE_OL           "OutoolkDemo"
     IDS_HELLO_OL               "Hello World!"
-    IDC_OUTOOLKDEMO         "OutlookDemo"
+    IDC_OUTOOLKDEMO_OL         "OutlookDemo"
 END
 
 STRINGTABLE 
 BEGIN
     ID_FILE_NEW_OL             "New Mail Message\nNew"
     ID_FILE_PRINTER         "Print the active document\nPrint"
-    ID_FIND                 "Find\nFind"
-    ID_APP_ABOUT            "Address Book\nAddress Book"
+    ID_FIND_OL                 "Find\nFind"
+    ID_APP_ABOUT_OL            "Address Book\nAddress Book"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_ADDRESBOOK           "Address Book\nAddress Book"
+    ID_ADDRESBOOK_OL           "Address Book\nAddress Book"
 END
 
 #endif    // English (U.S.) resources
@@ -219,7 +219,7 @@ LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
 // Bitmap
 //
 
-IDB_GUI_DOCKBAR         BITMAP                  "gui_dock.bmp"
+IDB_GUI_DOCKBAR_OL         BITMAP                  "gui_dock.bmp"
 #endif    // Spanish resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -238,8 +238,8 @@ LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_COLOMBIA
 // Bitmap
 //
 
-IDB_TOOLBOX             BITMAP                  "Toolbox.bmp"
-IDB_TREE                BITMAP                  "DB.bmp"
+IDB_TOOLBOX_OL             BITMAP                  "Toolbox.bmp"
+IDB_TREE_OL                BITMAP                  "DB.bmp"
 IDB_TOOLBAR_OL             BITMAP                  "bitmap2.bmp"
 #endif    // Spanish (Colombia) resources
 /////////////////////////////////////////////////////////////////////////////
