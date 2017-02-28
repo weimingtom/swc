@@ -87,15 +87,15 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		return -1;
 
 
-	m_ToolBar.LoadToolBar(IDR_TOOLBAR);
-	m_ToolBar.AddTrueColor(IDB_TOOLBAR,TB_SETIMAGELIST);
+	m_ToolBar.LoadToolBar(IDR_TOOLBAR_OL);
+	m_ToolBar.AddTrueColor(IDB_TOOLBAR_OL,TB_SETIMAGELIST);
 	m_ToolBar.CreateCombo(&m_comboDebug,ID_COMBOBOX,150,WS_CHILD|WS_VISIBLE|CBS_DROPDOWN  | 
 							WS_VSCROLL | CBS_HASSTRINGS |CBS_OWNERDRAWVARIABLE);
 
-	AddBar(&m_ToolBar, IDR_TOOLBAR);
+	AddBar(&m_ToolBar, IDR_TOOLBAR_OL);
 
 	SetPanelText(0,_T("nueva cadena ") );
-	SetIcon(theApp->LoadIcon((LPCSTR)IDI_SMALL),FALSE);
+	SetIcon(theApp->LoadIcon((LPCSTR)IDI_SMALL_OL),FALSE);
 
 	if (!m_Splitter.Create(this))
 			return -1;
@@ -179,7 +179,7 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	m_SplitterList.AddLeftCtrl(&m_up,400);
 	m_SplitterList.AddRightCtrl(&m_down,200);
 	m_ClientView=(CSplitter*)&m_Splitter;
-	cSpawn.LoadToolBarResource(IDR_TOOLBAR,IDB_TOOLBAR);
+	cSpawn.LoadToolBarResource(IDR_TOOLBAR_OL,IDB_TOOLBAR_OL);
 
 	//--------------------populate the tree
 

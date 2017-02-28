@@ -31,8 +31,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_WINCLASS            ICON                    "WinClass.ICO"
-IDI_SMALL               ICON                    "SMALL.ICO"
+IDI_WINCLASS_PWC            ICON                    "WinClass.ICO"
+IDI_SMALL_PWC               ICON                    "SMALL.ICO"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -43,9 +43,9 @@ IDC_BASEMENU MENU
 BEGIN
     POPUP "&File"
     BEGIN
-        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
-        MENUITEM "&Open\tCtrl+O",               ID_FILE_OPEN
-        MENUITEM "&Save ",                      ID_FILE_SAVE
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW_PWC
+        MENUITEM "&Open\tCtrl+O",               ID_FILE_OPEN_PWC
+        MENUITEM "&Save ",                      ID_FILE_SAVE_PWC
         MENUITEM SEPARATOR
         MENUITEM "&Exit",                       IDM_EXIT_PWC
     END
@@ -53,7 +53,7 @@ BEGIN
     BEGIN
         POPUP "&Toolbars"
         BEGIN
-            MENUITEM "&Main Toolbar",               ID_TOOLBAR
+            MENUITEM "&Main Toolbar",               ID_TOOLBAR_PWC
             MENUITEM "&Compile Toolbar",            32812
         END
         MENUITEM "&Status Bar",                 ID_VIEWSTATUSBAR
@@ -85,7 +85,7 @@ END
 // Accelerator
 //
 
-IDC_WINCLASS ACCELERATORS 
+IDC_WINCLASS_PWC ACCELERATORS 
 BEGIN
     "?",            IDM_ABOUT_PWC,              ASCII,  ALT
     "/",            IDM_ABOUT_PWC,              ASCII,  ALT
@@ -144,12 +144,12 @@ END
 
 IDR_STANDAR TOOLBAR  18, 16
 BEGIN
-    BUTTON      ID_FILE_NEW
-    BUTTON      ID_FILE_OPEN
-    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_NEW_PWC
+    BUTTON      ID_FILE_OPEN_PWC
+    BUTTON      ID_FILE_SAVE_PWC
     BUTTON      ID_SAVE_ALL
     SEPARATOR
-    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_CUT_PWC
     BUTTON      ID_EDIT_COPY
     SEPARATOR
     BUTTON      ID_EDIT_PASTE
@@ -162,16 +162,16 @@ END
 
 IDR_EDITTOOLBAR TOOLBAR  16, 16
 BEGIN
-    BUTTON      ID_BOTONNEGRO
+    BUTTON      ID_BOTONNEGRO_PWC
     SEPARATOR
-    BUTTON      ID_BOTONROJO
-    BUTTON      ID_BUTTON32785
-    BUTTON      ID_BUTTON32786
+    BUTTON      ID_BOTONROJO_PWC
+    BUTTON      ID_BUTTON32785_PWC
+    BUTTON      ID_BUTTON32786_PWC
     SEPARATOR
-    BUTTON      ID_BUTTON32787
-    BUTTON      ID_BUTTON32788
-    BUTTON      ID_TOOLBAR
-    BUTTON      ID_BUTTON32790
+    BUTTON      ID_BUTTON32787_PWC
+    BUTTON      ID_BUTTON32788_PWC
+    BUTTON      ID_TOOLBAR_PWC
+    BUTTON      ID_BUTTON32790_PWC
 END
 
 IDR_BUILD TOOLBAR  16, 15
@@ -217,10 +217,10 @@ END
 
 STRINGTABLE 
 BEGIN
-    ID_FILE_NEW             "New\nNew Project"
-    ID_FILE_OPEN            "Open\nOpen Project"
-    ID_FILE_SAVE            "Save an existing document\nSave"
-    ID_EDIT_CUT             "Cut\nCut"
+    ID_FILE_NEW_PWC             "New\nNew Project"
+    ID_FILE_OPEN_PWC            "Open\nOpen Project"
+    ID_FILE_SAVE_PWC            "Save an existing document\nSave"
+    ID_EDIT_CUT_PWC             "Cut\nCut"
 END
 
 STRINGTABLE 
@@ -297,21 +297,21 @@ LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_COLOMBIA
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDR_MENUHELLO           ICON                    "icon1.ico"
+IDR_MENUHELLO_PWC           ICON                    "icon1.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Menu
 //
 
-IDR_MENUHELLO MENU 
+IDR_MENUHELLO_PWC MENU 
 BEGIN
     POPUP "&File"
     BEGIN
-        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
-        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
-        MENUITEM "&Close",                      ID_FILE_CLOSE
-        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW_PWC
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN_PWC
+        MENUITEM "&Close",                      ID_FILE_CLOSE_PWC
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE_PWC
         MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
         MENUITEM "&Print...\tCtrl+P",           32810
@@ -320,10 +320,10 @@ BEGIN
     END
     POPUP "&Edit"
     BEGIN
-        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_CUT
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_CUT_PWC
         MENUITEM "&Redo",                       ID_EDIT_REDO
         MENUITEM SEPARATOR
-        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT_PWC
         MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
         MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
         MENUITEM SEPARATOR
@@ -333,7 +333,7 @@ BEGIN
     BEGIN
         POPUP "&Toolbars"
         BEGIN
-            MENUITEM "&Main Toolbar",               ID_TOOLBAR
+            MENUITEM "&Main Toolbar",               ID_TOOLBAR_PWC
             MENUITEM "&Compile Toolbar",            32812
         END
         MENUITEM "&Status Bar",                 ID_VIEWSTATUSBAR
@@ -400,7 +400,7 @@ IDB_DB                  BITMAP                  "bitmapDB.bmp"
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_CUT             "Cut"
+    ID_EDIT_CUT_PWC             "Cut"
 END
 
 STRINGTABLE 
@@ -417,7 +417,7 @@ END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLBAR              "Toolbar\\Show hide"
+    ID_TOOLBAR_PWC              "Toolbar\\Show hide"
 END
 
 #endif    // Spanish (Colombia) resources

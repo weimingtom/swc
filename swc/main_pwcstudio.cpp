@@ -27,10 +27,10 @@ BOOL CAbout::OnCancel(WPARAM wParam, LPARAM lParam, HWND hWnd)
 void CWinFrame::OnNew(WPARAM wParam, LPARAM lParam, HWND hWnd)
 {
 	m_edit = new CEdit();
-	if (!m_edit->Create(m_Tabbed.GetSafeHwnd(),IDR_MENUHELLO, _T(""), 
+	if (!m_edit->Create(m_Tabbed.GetSafeHwnd(),IDR_MENUHELLO_PWC, _T(""), 
 		WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_HSCROLL | ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL|ES_WANTRETURN))
 		return;
-	m_Tabbed.AddNewtab(m_edit,IDR_MENUHELLO);
+	m_Tabbed.AddNewtab(m_edit,IDR_MENUHELLO_PWC);
 	return;
 }
 
@@ -127,7 +127,7 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 							WS_VSCROLL | CBS_HASSTRINGS |CBS_OWNERDRAWVARIABLE);
 	//Init Statubar 
 	SetPanelText(0,_T("Ready ") );
-	SetIcon(theApp->LoadIcon((LPCSTR)IDI_SMALL),FALSE);
+	SetIcon(theApp->LoadIcon((LPCSTR)IDI_SMALL_PWC),FALSE);
 	//--------------------------------------
 	// Tab
 	//--------------------------------------
