@@ -170,13 +170,11 @@
       <File Name="pwcstudio/gui_dock.bmp"/>
       <File Name="pwcstudio/icon1.ico"/>
       <File Name="pwcstudio/Pretty.manifest"/>
-      <File Name="pwcstudio/resource.h"/>
       <File Name="pwcstudio/SMALL.ICO"/>
       <File Name="pwcstudio/toolbar1.bmp"/>
       <File Name="pwcstudio/toolbar2.bmp"/>
       <File Name="pwcstudio/toolbar_.bmp"/>
       <File Name="pwcstudio/WinClass.ico"/>
-      <File Name="pwcstudio/WinClass.rc" ExcludeProjConfig="Debug"/>
     </VirtualDirectory>
     <File Name="swc.rc"/>
   </VirtualDirectory>

@@ -388,7 +388,7 @@ int CTabbed::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (CContainer::OnCreate(lpCreateStruct) == -1)
 		return -1;
 	
-	if (!m_img.Create(IDB_GUI_DOCKBAR,9,11,RGB(255,0,255)))
+	if (!m_img.Create(IDB_GUI_DOCKBAR_OL,9,11,RGB(255,0,255)))
 	{
 		return -1;
 	}

@@ -14,7 +14,7 @@
 #include "CSplitter.h"
 #include "CFolder.h"
 #include "CHeaderView.h"
-#include "outlookdemo/resource.h"
+#include "resource.h"
 
 #define IDO_OUTODAY	   5600
 #define IDO_CALENDARIO 5601
@@ -94,11 +94,11 @@ public:
 BEGIN_MSG_MAP()
 	 ON_WM_CLOSE(OnClose)
 	 ON_WM_CREATE(OnCreate)
-	 ON_COMMAND(ID_FILE_NEW,OnNew)
+	 ON_COMMAND(ID_FILE_NEW_OL,OnNew)
 	 ON_WM_SIZE(OnSize) 
-	 ON_COMMAND(IDR_TOOLBAR,OnToolBar)
-	 ON_COMMAND(IDM_EXIT,OnExit)
-	 ON_COMMAND(ID_APP_ABOUT,OnAbout);
+	 ON_COMMAND(IDR_TOOLBAR_OL,OnToolBar)
+	 ON_COMMAND(IDM_EXIT_OL,OnExit)
+	 ON_COMMAND(ID_APP_ABOUT_OL,OnAbout);
 	 ON_COMMAND(IDO_OUTODAY,OnToday);
 END_MSG_MAP(CFrame)
 };

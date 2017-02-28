@@ -164,7 +164,7 @@ void CWorkTab::Drawtabs(CGDI* dc)
 		r.right = r.left + 35;
 		r.top += 1;
 		// r.bottom-=1;
-		if (!m_img.Create(IDB_GUI_DOCKBAR, 9, 11, RGB(255, 0, 255)))
+		if (!m_img.Create(IDB_GUI_DOCKBAR_OL, 9, 11, RGB(255, 0, 255)))
 		{
 			//TRACE0("error imagelist");
 		}

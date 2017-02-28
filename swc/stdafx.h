@@ -19,6 +19,7 @@
 
 /*FIXME:  see COMMCTRL.H */
 
+/*
 #if !MINGW_VERSION_4
 typedef struct tagNMKEY
 {
@@ -34,6 +35,21 @@ typedef struct tagNMCHAR {
     DWORD   dwItemNext;     // Item to be selected
 } NMCHAR, FAR* LPNMCHAR;
 #endif
+*/
+
+typedef struct tagMY_NMKEY
+{
+    NMHDR hdr;
+    UINT  nVKey;
+    UINT  uFlags;
+} MY_NMKEY, FAR *MY_LPNMKEY;
+
+typedef struct tagMY_NMCHAR {
+    NMHDR   hdr;
+    UINT    ch;
+    DWORD   dwItemPrev;     // Item previously selected 
+    DWORD   dwItemNext;     // Item to be selected
+} MY_NMCHAR, FAR* MY_LPNMCHAR;
 
 /*
 FIXME: WINUSER.H

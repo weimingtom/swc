@@ -226,7 +226,7 @@ BOOL CMMedia::OnEraseBkgnd(HDC hDC)
 
 int CMMedia::OnCreate(LPCREATESTRUCT lpCreateStruct)
 {
-	if (!m_img.Create(IDB_GUI_DOCKBAR,9,11,RGB(255,0,255)))
+	if (!m_img.Create(IDB_GUI_DOCKBAR_OL,9,11,RGB(255,0,255)))
 	{
 		return -1;
 	}

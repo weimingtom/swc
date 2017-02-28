@@ -41,6 +41,7 @@ CFolder::CFolder()
 
 CFolder::~CFolder()
 {
+    //FIXME:crash here
 	if (cfont)
 		delete cfont;
 }
@@ -124,7 +125,7 @@ void CFolder::EfectoScroll()
 			if (((CFolderBar*)m_ArrayFolder[m_iSelected+1])->m_posUp ==FALSE)
 				return;
 			m_iSentidoScroll =1;
-				//de esta posición todos los folders hacia abajo 
+				//de esta posiciÃ³n todos los folders hacia abajo 
 			for (int iCont=m_iSelected+1;iCont < m_iNumBotton; iCont++)
 				((CFolderBar*)m_ArrayFolder[iCont])->m_posUp =FALSE;
 				
@@ -132,7 +133,7 @@ void CFolder::EfectoScroll()
 		else if (((CFolderBar*)m_ArrayFolder[m_iSelected])->m_posUp ==FALSE)
 		{
 				m_iSentidoScroll =2;
-				//de esta posición todos los folders van arriba
+				//de esta posiciÃ³n todos los folders van arriba
 				for (int iCont=m_iSelected;iCont >0; iCont--)
 					((CFolderBar*)m_ArrayFolder[iCont])->m_posUp =TRUE;
 		}
@@ -251,6 +252,7 @@ void CFolder::DrawFolder(CFolderBar* cfb,Style m_Style)
 	
 	
 	int OldMode=pDC.SetBkMode(TRANSPARENT);
+    //FIXME:crash here
 	cfont = (CFont*)pDC.SelectObject(CFont((HFONT)GetStockObject(DEFAULT_GUI_FONT)));
 	TCHAR m_cadBreak[64];
 	memset(m_cadBreak,0x00,64);

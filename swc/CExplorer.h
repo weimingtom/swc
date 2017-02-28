@@ -28,22 +28,22 @@ protected:
 	virtual BOOL OnCreate(LPCREATESTRUCT lpCreateStruct)
 	{
 
-		if ( !m_ToolBarBuild.Create(GetSafeHwnd(),IDR_BUILD))
+		if ( !m_ToolBarBuild.Create(GetSafeHwnd(),IDR_BUILD_PWC))
 		return -1;
 	
 		if (!m_comboboxExt.Create(GetSafeHwnd(),0x10000,NULL,WS_CHILD|WS_VISIBLE|CBS_DROPDOWN  | 
 							WS_VSCROLL | CBS_HASSTRINGS |CBS_OWNERDRAWVARIABLE))
 							return -1;
 
-		m_ToolBarBuild.LoadToolBar(IDR_BUILD);
-		m_ToolBarBuild.AddTrueColor(IDB_BUILD,TB_SETIMAGELIST);
+		m_ToolBarBuild.LoadToolBar(IDR_BUILD_PWC);
+		m_ToolBarBuild.AddTrueColor(IDB_BUILD_PWC,TB_SETIMAGELIST);
 		if (!m_TreeExplorer.Create(GetSafeHwnd(),WS_CHILD | WS_VISIBLE | TVS_HASLINES | 
 								TVS_LINESATROOT | TVS_HASBUTTONS, 2))
 		return -1;
 	
 		
 		
-		if(!Image.CreateColor(IDB_TREEEXPLORER)) 
+		if(!Image.CreateColor(IDB_TREEEXPLORER_PWC)) 
 			return FALSE;
 		m_TreeExplorer.SetImageList(Image.GetImageHandle(),TVSIL_NORMAL);
 		PopulateTree();

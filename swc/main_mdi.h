@@ -11,7 +11,7 @@
 #include "CListView.h"
 #include "CMiniFrame.h"
 #include "CFileOpen.h"
-#include "mdi/resource.h"
+#include "resource.h"
 
 #define HELLO 0x1111
 #define IDPANEL0  60
@@ -87,7 +87,7 @@ END_MSG_MAP(CDialog)
 
 BOOL CAbout::OnInitDialog(HWND wParam,LPARAM lParam)
 {
-	LINK_Control(IDC_EDIT,m_edit);
+	LINK_Control(IDC_EDIT_PWC,m_edit);
 	return TRUE;
 }
 
@@ -124,7 +124,7 @@ public:
 	void OnNew(WPARAM wParam, LPARAM lParam, HWND hWnd)
 	{
 		ChildHello* child=new ChildHello();
-		if (!child->LoadFrame(IDR_MENUHELLO,GetSafeClientHwnd()))
+		if (!child->LoadFrame(IDR_MENUHELLO_MDI,GetSafeClientHwnd()))
 			return;
 		
 		
@@ -159,7 +159,7 @@ public:
 	void OnAbout(WPARAM wParam, LPARAM lParam, HWND hWnd)
 	{
 		CAbout cb;
-		cb.DoModal(this,(LPCTSTR)IDD_ABOUTBOX);
+		cb.DoModal(this,(LPCTSTR)IDD_ABOUTBOX_MDI);
 	}
 
 	void OnTitle(WPARAM wParam, LPARAM lParam, HWND hWnd)
@@ -180,15 +180,15 @@ public:
 
 BEGIN_MSG_MAP()
 	 ON_WM_CREATE(OnCreate)
-	 ON_COMMAND(ID_FILE_NEW,OnNew)
+	 ON_COMMAND(ID_FILE_NEW_MDI,OnNew)
 	 ON_WM_SIZE(OnSize) 
-	 ON_COMMAND(ID_WINDOW_CASCADE,Cascade)
-	 ON_COMMAND(ID_TOOLBAR,OnToolBar)
-	 ON_COMMAND(IDM_EXIT,OnExit)
-	 ON_COMMAND(ID_FILE_CLOSE,OnFileClose)
-	 ON_COMMAND(ID_FILE_OPEN,OnFileOpen)
-	 ON_COMMAND(ID_WINDOW_TILE_HORZ,OnTitle)
-	 ON_COMMAND(IDM_ABOUT,OnAbout);
+	 ON_COMMAND(ID_WINDOW_CASCADE_MDI,Cascade)
+	 ON_COMMAND(ID_TOOLBAR_MDI,OnToolBar)
+	 ON_COMMAND(IDM_EXIT_MDI,OnExit)
+	 ON_COMMAND(ID_FILE_CLOSE_MDI,OnFileClose)
+	 ON_COMMAND(ID_FILE_OPEN_MDI,OnFileOpen)
+	 ON_COMMAND(ID_WINDOW_TILE_HORZ_MDI,OnTitle)
+	 ON_COMMAND(IDM_ABOUT_MDI,OnAbout);
 	 ON_WM_CLOSE(OnClose)
 //	 ON_WM_DRAWITEM(OnDrawItem)
 //	 ON_WM_MEASUREITEM(OnMeasureItem) 

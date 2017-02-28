@@ -16,7 +16,7 @@ public:
 	virtual BOOL OnCustomDraw( LPNMCUSTOMDRAW pCustomDraw, BOOL &bNotify)	{ return CDRF_DODEFAULT; }
 	virtual BOOL OnDblclk( LPNMHDR pNMHDR, BOOL &bNotify){ return FALSE;}
 	virtual BOOL OnHover( LPNMHDR pNMHDR, BOOL &bNotify){ return FALSE;}
-	virtual BOOL OnKeydown( LPNMKEY pKey, BOOL &bNotify){ return FALSE;}
+	virtual BOOL OnKeydown( MY_LPNMKEY pKey, BOOL &bNotify){ return FALSE;}
 	virtual BOOL OnKillFocus( LPNMHDR pNMHDR, BOOL &bNotify){ return FALSE;}
 	virtual BOOL OnNCHitTest( LPNMMOUSE pMouse, BOOL &bNotify){ return FALSE;}
 	virtual BOOL OnOutOfMemory( LPNMHDR pNMHDR, BOOL &bNotify){ return FALSE;}
@@ -43,7 +43,7 @@ public:
 			case	NM_HOVER:	    
 				return OnHover( pNMHDR , bNotify);
 			case	NM_KEYDOWN:	    
-				return OnKeydown(( LPNMKEY )pNMHDR , bNotify);
+				return OnKeydown(( MY_LPNMKEY )pNMHDR , bNotify);
 			case	NM_KILLFOCUS:	    
 				return OnKillFocus( pNMHDR ,  bNotify);
 			case	NM_NCHITTEST:	    
