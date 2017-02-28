@@ -109,20 +109,20 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (!CreateExBars(Panels,3))
 		return -1;
 	//Toolbars
-	if ( !m_ToolBarMain.Create(m_ReBar->GetSafeHwnd(),IDR_MAINTOOLBAR))
+	if ( !m_ToolBarMain.Create(m_ReBar->GetSafeHwnd(),IDR_MAINTOOLBAR_PWC))
 		return -1;
-	if ( !m_ToolBarEdit.Create(m_ReBar->GetSafeHwnd(),IDR_BUILD))
+	if ( !m_ToolBarEdit.Create(m_ReBar->GetSafeHwnd(),IDR_BUILD_PWC))
 		return -1;
-	m_ToolBarMain.LoadToolBar(IDR_STANDAR);
-	m_ToolBarEdit.LoadToolBar(IDR_BUILD);
-	m_ToolBarMain.AddTrueColor(IDB_STANDAR,TB_SETIMAGELIST);
-	m_ToolBarEdit.AddTrueColor(IDB_BUILD,TB_SETIMAGELIST);
+	m_ToolBarMain.LoadToolBar(IDR_STANDAR_PWC);
+	m_ToolBarEdit.LoadToolBar(IDR_BUILD_PWC);
+	m_ToolBarMain.AddTrueColor(IDB_STANDAR_PWC,TB_SETIMAGELIST);
+	m_ToolBarEdit.AddTrueColor(IDB_BUILD_PWC,TB_SETIMAGELIST);
 
 	if (!m_Tabbed.Create(WS_VISIBLE|WS_CHILD,CRect(0,0,0,0),this,0x333))
 		return -1;
 
-	AddBar(&m_ToolBarMain, IDR_MAINTOOLBAR);
-	AddBar(&m_ToolBarEdit, IDR_BUILD);
+	AddBar(&m_ToolBarMain, IDR_MAINTOOLBAR_PWC);
+	AddBar(&m_ToolBarEdit, IDR_BUILD_PWC);
 	m_ToolBarMain.CreateCombo(&m_comboDebug,ID_COMBOBOX_PWC,150,WS_CHILD|WS_VISIBLE|CBS_DROPDOWN  | 
 							WS_VSCROLL | CBS_HASSTRINGS |CBS_OWNERDRAWVARIABLE);
 	//Init Statubar 
@@ -165,7 +165,7 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	FullfilHelp();
 	m_TreeClassView.SetWindowText(_T("Class View "));
 	
-	m_tab.Addtab(&m_TreeHelp,NULL,IDR_MENUOPTION);
+	m_tab.Addtab(&m_TreeHelp,NULL,IDR_MENUOPTION_PWC);
 	m_tab.SetStyle(CContainer::S3D);
 	
 	//-------------------------------------
@@ -247,9 +247,9 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	
 
 	//-------------------End Toolbox-----------------------------------
-	m_tab_Edit.Addtab (&m_wndEdit,NULL,IDR_MENUOPTION);
+	m_tab_Edit.Addtab (&m_wndEdit,NULL,IDR_MENUOPTION_PWC);
 
-	m_wtab.Addtab (&m_wndDebug,NULL,IDR_MENUOPTION);
+	m_wtab.Addtab (&m_wndDebug,NULL,IDR_MENUOPTION_PWC);
 
 	//subclass the Header list
 	HWND hWndHeader = m_wndEdit.GetDlgItem(0);
@@ -258,7 +258,7 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	hWndHeader = m_wndDebug.GetDlgItem(0);
 	m_headerDebug.SubclassWnd(hWndHeader);
 
-	m_rtab.Addtab (&cf,NULL,IDR_MENUOPTION);
+	m_rtab.Addtab (&cf,NULL,IDR_MENUOPTION_PWC);
 	SetIconsList();
 	m_DockLeft->AddWindow(&m_tab);
 	
@@ -271,9 +271,9 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	
 
 	//Init the MenuBar
-	cSpawn.LoadToolBarResource(IDR_STANDAR,IDB_STANDAR);
-//	cSpawn.LoadToolBarResource(IDR_EDITTOOLBAR,IDB_EDITTOOLBAR);
-	cSpawn.LoadToolBarResource(IDR_BUILD,IDB_BUILD);
+	cSpawn.LoadToolBarResource(IDR_STANDAR_PWC,IDB_STANDAR_PWC);
+//	cSpawn.LoadToolBarResource(IDR_EDITTOOLBAR,IDB_EDITTOOLBAR_PWC);
+	cSpawn.LoadToolBarResource(IDR_BUILD_PWC,IDB_BUILD_PWC);
 	
 	m_ClientView=(CMainFrame*)&m_Tabbed;
 	OnNew(0, 0, 0);
@@ -282,7 +282,7 @@ BOOL CWinFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 void CWinFrame::FullfilHelp()
 {
-	if(!Image.CreateColor(IDB_TREEEXPLORER)) 
+	if(!Image.CreateColor(IDB_TREEEXPLORER_PWC)) 
 		return;
 	m_TreeHelp.SetImageList(Image.GetImageHandle(),TVSIL_NORMAL);
 	HTREEITEM hRoot = m_TreeHelp.InsertItem (_T("Help files"), 24, 24);
@@ -342,9 +342,9 @@ int CAppMain::InitInstance()
 	SetRegistryKey(_T("SWC\\Example\\DevStudio\\"));
 	m_WinMain=(CFrame*)new CWinFrame; 
 		
-	if (m_WinMain->LoadFrame(IDC_BASEMENU)== FALSE)
+	if (m_WinMain->LoadFrame(IDC_BASEMENU_PWC)== FALSE)
 		return -1;
-	LoadMenu((LPCTSTR)IDC_BASEMENU);
+	LoadMenu((LPCTSTR)IDC_BASEMENU_PWC);
 	CRect rc;
 	rc=m_WinMain->GetConfig();
 	m_WinMain->cSpawn.RemapMenu(m_Menu.GetHandleMenu());
@@ -352,7 +352,7 @@ int CAppMain::InitInstance()
 	m_WinMain->ShowWindow(SW_SHOW);
 	m_WinMain->Invalidate();
 	m_WinMain->UpdateWindow();
-	hAccelTable = LoadAccelerators( (LPCTSTR)IDC_BASEMENU);
+	hAccelTable = LoadAccelerators( (LPCTSTR)IDC_BASEMENU_PWC);
 	return Run();	
 }
 

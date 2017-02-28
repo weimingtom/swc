@@ -30,7 +30,7 @@ protected:
 	
 		
 		
-		if(!Image.CreateColor(IDB_TREEEXPLORER)) 
+		if(!Image.CreateColor(IDB_TREEEXPLORER_PWC)) 
 			return FALSE;
 		m_TreeResource.SetImageList(Image.GetImageHandle(),TVSIL_NORMAL);
 		PopulateTree();
@@ -46,8 +46,8 @@ protected:
 		HTREEITEM hIcon = m_TreeResource.InsertItem (_T("Icon"), 2, 3, hRoot);
 		HTREEITEM hMenu = m_TreeResource.InsertItem (_T("Menu"), 2, 3, hRoot);
 		m_TreeResource.InsertItem (_T("IDC_WINCLASS_MDI"), 8, 8, hAcc);
-		m_TreeResource.InsertItem (_T("IDB_BUILD"), 7, 7, hBit);
-		m_TreeResource.InsertItem (_T("IDB_EDITTOOLBAR"), 7, 7, hBit);
+		m_TreeResource.InsertItem (_T("IDB_BUILD_PWC"), 7, 7, hBit);
+		m_TreeResource.InsertItem (_T("IDB_EDITTOOLBAR_PWC"), 7, 7, hBit);
 		m_TreeResource.InsertItem (_T("IDB_MAINTOOLBAR"), 7, 7, hBit);
 		m_TreeResource.InsertItem (_T("IDD_ABOUTBOX_MDI"), 9, 9, hDial);
 		m_TreeResource.InsertItem (_T("IDI_SMALL_MDI"), 10, 10, hIcon);

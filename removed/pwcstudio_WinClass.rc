@@ -39,7 +39,7 @@ IDI_SMALL_PWC               ICON                    "SMALL.ICO"
 // Menu
 //
 
-IDC_BASEMENU MENU 
+IDC_BASEMENU_PWC MENU 
 BEGIN
     POPUP "&File"
     BEGIN
@@ -56,22 +56,22 @@ BEGIN
             MENUITEM "&Main Toolbar",               ID_TOOLBAR_PWC
             MENUITEM "&Compile Toolbar",            32812
         END
-        MENUITEM "&Status Bar",                 ID_VIEWSTATUSBAR
+        MENUITEM "&Status Bar",                 ID_VIEWSTATUSBAR_PWC
         MENUITEM SEPARATOR
-        MENUITEM "&ResourceView",               ID_VIEWRESOURCEVIEW
-        MENUITEM "Help &Window",                ID_VIEWHELPWINDOW
-        MENUITEM "T&oolBox",                    ID_VIEWTOOLBOX
-        MENUITEM "&Class View",                 ID_VIEWCLASSVIEW
-        MENUITEM "O&utlook Window",             ID_VIEW_OUTLOOKWINDOW
-        MENUITEM "Solution &Explorer",          ID_VIEW_SOLUTIONEXPLORER
-        MENUITEM "Wortab Demo",                 ID_VIEW_WORTABDEMO
+        MENUITEM "&ResourceView",               ID_VIEWRESOURCEVIEW_PWC
+        MENUITEM "Help &Window",                ID_VIEWHELPWINDOW_PWC
+        MENUITEM "T&oolBox",                    ID_VIEWTOOLBOX_PWC
+        MENUITEM "&Class View",                 ID_VIEWCLASSVIEW_PWC
+        MENUITEM "O&utlook Window",             ID_VIEW_OUTLOOKWINDOW_PWC
+        MENUITEM "Solution &Explorer",          ID_VIEW_SOLUTIONEXPLORER_PWC
+        MENUITEM "Wortab Demo",                 ID_VIEW_WORTABDEMO_PWC
     END
     POPUP "&Tools"
     BEGIN
-        MENUITEM "&Macro...",                   ID_VIEWHELPWINDOW
+        MENUITEM "&Macro...",                   ID_VIEWHELPWINDOW_PWC
         MENUITEM "&Options...",                 32856
         MENUITEM "&Options...",                 32856
-        MENUITEM "<User defined tools>",        ID_VIEW_OUTLOOKWINDOW
+        MENUITEM "<User defined tools>",        ID_VIEW_OUTLOOKWINDOW_PWC
     END
     POPUP "&Help"
     BEGIN
@@ -142,12 +142,12 @@ END
 // Toolbar
 //
 
-IDR_STANDAR TOOLBAR  18, 16
+IDR_STANDAR_PWC TOOLBAR  18, 16
 BEGIN
     BUTTON      ID_FILE_NEW_PWC
     BUTTON      ID_FILE_OPEN_PWC
     BUTTON      ID_FILE_SAVE_PWC
-    BUTTON      ID_SAVE_ALL
+    BUTTON      ID_SAVE_ALL_PWC
     SEPARATOR
     BUTTON      ID_EDIT_CUT_PWC
     BUTTON      ID_EDIT_COPY_PWC
@@ -156,11 +156,11 @@ BEGIN
     BUTTON      ID_COMBOBOX_PWC
     BUTTON      ID_EDIT_UNDO_PWC
     BUTTON      ID_EDIT_REDO_PWC
-    BUTTON      ID_NAVIGATE
-    BUTTON      ID_EDIT_FIND
+    BUTTON      ID_NAVIGATE_PWC
+    BUTTON      ID_EDIT_FIND_PWC
 END
 
-IDR_EDITTOOLBAR TOOLBAR  16, 16
+IDR_EDITTOOLBAR_PWC TOOLBAR  16, 16
 BEGIN
     BUTTON      ID_BOTONNEGRO_PWC
     SEPARATOR
@@ -174,12 +174,12 @@ BEGIN
     BUTTON      ID_BUTTON32790_PWC
 END
 
-IDR_BUILD TOOLBAR  16, 15
+IDR_BUILD_PWC TOOLBAR  16, 15
 BEGIN
-    BUTTON      ID_BUILPROJECT
-    BUTTON      ID_COMPILE
-    BUTTON      ID_BUILPROJECT
-    BUTTON      ID_CANCEL
+    BUTTON      ID_BUILPROJECT_PWC
+    BUTTON      ID_COMPILE_PWC
+    BUTTON      ID_BUILPROJECT_PWC
+    BUTTON      ID_CANCEL_PWC
 END
 
 
@@ -188,10 +188,10 @@ END
 // Bitmap
 //
 
-IDR_STANDAR             BITMAP                  "toolbar1.bmp"
-IDR_EDITTOOLBAR         BITMAP                  "toolbar_.bmp"
-IDR_BUILD               BITMAP                  "toolbar2.bmp"
-IDB_OUTLOOK             BITMAP                  "bitmap1.bmp"
+IDR_STANDAR_PWC             BITMAP                  "toolbar1.bmp"
+IDR_EDITTOOLBAR_PWC         BITMAP                  "toolbar_.bmp"
+IDR_BUILD_PWC               BITMAP                  "toolbar2.bmp"
+IDB_OUTLOOK_PWC             BITMAP                  "bitmap1.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -225,19 +225,19 @@ END
 
 STRINGTABLE 
 BEGIN
-    IDC_BASEMENU            "PwcStudio"
+    IDC_BASEMENU_PWC            "PwcStudio"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_SAVE_ALL             "Save All\nSave all documents"
-    ID_BUILPROJECT          "Build\nBuild project"
+    ID_SAVE_ALL_PWC             "Save All\nSave all documents"
+    ID_BUILPROJECT_PWC          "Build\nBuild project"
 END
 
 STRINGTABLE 
 BEGIN
     ID_EDIT_COPY_PWC            "Copy\nCopy"
-    ID_EDIT_FIND            "Find\nFind"
+    ID_EDIT_FIND_PWC            "Find\nFind"
     ID_EDIT_PASTE_PWC           "Paste\nPaste"
     ID_EDIT_UNDO_PWC            "Undo\nUndo"
     ID_EDIT_REDO_PWC            "Redo\nRedo"
@@ -245,17 +245,17 @@ END
 
 STRINGTABLE 
 BEGIN
-    ID_NAVIGATE             "Navigate\nNavigate"
+    ID_NAVIGATE_PWC             "Navigate\nNavigate"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_COMPILE              "Compile\nCompile file"
+    ID_COMPILE_PWC              "Compile\nCompile file"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_CANCEL               "Cancel\nCancel"
+    ID_CANCEL_PWC               "Cancel\nCancel"
 END
 
 #endif    // English (U.S.) resources
@@ -327,7 +327,7 @@ BEGIN
         MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY_PWC
         MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE_PWC
         MENUITEM SEPARATOR
-        MENUITEM "&Find...",                    ID_EDIT_FIND
+        MENUITEM "&Find...",                    ID_EDIT_FIND_PWC
     END
     POPUP "&View"
     BEGIN
@@ -336,21 +336,21 @@ BEGIN
             MENUITEM "&Main Toolbar",               ID_TOOLBAR_PWC
             MENUITEM "&Compile Toolbar",            32812
         END
-        MENUITEM "&Status Bar",                 ID_VIEWSTATUSBAR
+        MENUITEM "&Status Bar",                 ID_VIEWSTATUSBAR_PWC
         MENUITEM SEPARATOR
-        MENUITEM "&ResourceView",               ID_VIEWRESOURCEVIEW
-        MENUITEM "Help &Window",                ID_VIEWSHELPWINDOW
-        MENUITEM "T&oolBox",                    ID_VIEWTOOLBOX
-        MENUITEM "&Class View",                 ID_VIEWCLASSVIEW
-        MENUITEM "O&utlook Window",             ID_VIEW_OUTLOOKWINDOW
-        MENUITEM "Solution &Explorer",          ID_VIEW_SOLUTIONEXPLORER
-        MENUITEM "Wortab Demo",                 ID_VIEW_WORTABDEMO
+        MENUITEM "&ResourceView",               ID_VIEWRESOURCEVIEW_PWC
+        MENUITEM "Help &Window",                ID_VIEWSHELPWINDOW_PWC
+        MENUITEM "T&oolBox",                    ID_VIEWTOOLBOX_PWC
+        MENUITEM "&Class View",                 ID_VIEWCLASSVIEW_PWC
+        MENUITEM "O&utlook Window",             ID_VIEW_OUTLOOKWINDOW_PWC
+        MENUITEM "Solution &Explorer",          ID_VIEW_SOLUTIONEXPLORER_PWC
+        MENUITEM "Wortab Demo",                 ID_VIEW_WORTABDEMO_PWC
     END
     POPUP "&Build"
     BEGIN
-        MENUITEM "&Compile",                    ID_COMPILE
-        MENUITEM "&Build",                      ID_DUMMY_BUILD
-        MENUITEM "Rebuild &All",                ID_DUMMY_REBUILD_ALL
+        MENUITEM "&Compile",                    ID_COMPILE_PWC
+        MENUITEM "&Build",                      ID_DUMMY_BUILD_PWC
+        MENUITEM "Rebuild &All",                ID_DUMMY_REBUILD_ALL_PWC
         MENUITEM "&Clean",                      32799
         MENUITEM SEPARATOR
         MENUITEM "&Go",                         32791
@@ -362,7 +362,7 @@ BEGIN
     BEGIN
         MENUITEM "&Macro...",                   32816
         MENUITEM "&Options...",                 32856
-        MENUITEM "<User defined tools>",        ID_VIEW_OUTLOOKWINDOW
+        MENUITEM "<User defined tools>",        ID_VIEW_OUTLOOKWINDOW_PWC
     END
     POPUP "&Help"
     BEGIN
@@ -370,7 +370,7 @@ BEGIN
     END
 END
 
-IDR_MENUOPTION MENU 
+IDR_MENUOPTION_PWC MENU 
 BEGIN
     POPUP "Toolbars"
     BEGIN
@@ -386,10 +386,10 @@ END
 // Bitmap
 //
 
-IDB_MAINTOOLBAR         BITMAP                  "bitmapMAINTOOLBAR.bmp"
-IDB_BUILD               BITMAP                  "bmpbuild.bmp"
-IDB_STANDAR             BITMAP                  "bmpStandar.bmp"
-IDB_TREEEXPLORER        BITMAP                  "BmpTreeExplorer.bmp"
+IDB_MAINTOOLBAR_PWC         BITMAP                  "bitmapMAINTOOLBAR.bmp"
+IDB_BUILD_PWC               BITMAP                  "bmpbuild.bmp"
+IDB_STANDAR_PWC             BITMAP                  "bmpStandar.bmp"
+IDB_TREEEXPLORER_PWC        BITMAP                  "BmpTreeExplorer.bmp"
 133                     BITMAP                  "bmpToolbox.bmp"
 IDB_DB_PWC                  BITMAP                  "bitmapDB.bmp"
 
@@ -412,7 +412,7 @@ END
 
 STRINGTABLE 
 BEGIN
-    ID_DUMMY_REBUILD_ALL    "Rebuild All"
+    ID_DUMMY_REBUILD_ALL_PWC    "Rebuild All"
 END
 
 STRINGTABLE 

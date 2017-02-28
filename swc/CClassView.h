@@ -30,7 +30,7 @@ protected:
 	
 		
 		
-		if(!Image.CreateColor(IDB_TREEEXPLORER)) 
+		if(!Image.CreateColor(IDB_TREEEXPLORER_PWC)) 
 			return FALSE;
 		m_TreeResource.SetImageList(Image.GetImageHandle(),TVSIL_NORMAL);
 		PopulateTree();
