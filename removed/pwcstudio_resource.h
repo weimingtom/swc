@@ -4,11 +4,11 @@
 //
 #define ID_FILE_PRINT                   0
 #define ID_FILE_PRINT_PREVIEW           0
-#define IDC_MYICON                      2
-#define IDD_WINCLASS_DIALOG             102
-#define IDD_ABOUTBOX                    103
-#define IDM_ABOUT                       104
-#define IDM_EXIT                        105
+#define IDC_MYICON_PWC                      2
+#define IDD_WINCLASS_DIALOG_PWC             102
+#define IDD_ABOUTBOX_PWC                    103
+#define IDM_ABOUT_PWC                       104
+#define IDM_EXIT_PWC                        105
 #define IDI_WINCLASS                    107
 #define IDI_SMALL                       108
 #define IDC_WINCLASS                    109

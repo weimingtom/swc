@@ -64,7 +64,7 @@ void CWinFrame::OnFileClose(WPARAM wParam, LPARAM lParam, HWND hWnd)
 void CWinFrame::OnAbout(WPARAM wParam, LPARAM lParam, HWND hWnd)
 {
 	CAbout cb;
-	cb.DoModal(this,(LPCTSTR)IDD_ABOUTBOX);
+	cb.DoModal(this,(LPCTSTR)IDD_ABOUTBOX_OL);
 }
 
 void CWinFrame::OnToday(WPARAM wParam, LPARAM lParam, HWND hWnd)

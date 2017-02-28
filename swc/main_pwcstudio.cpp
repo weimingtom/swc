@@ -95,7 +95,7 @@ void CWinFrame::OnFileOpen(WPARAM wParam, LPARAM lParam, HWND hWnd)
 void CWinFrame::OnAbout(WPARAM wParam, LPARAM lParam, HWND hWnd)
 {
 	CAbout cb;
-	cb.DoModal(this,(LPCTSTR)IDD_ABOUTBOX);
+	cb.DoModal(this,(LPCTSTR)IDD_ABOUTBOX_PWC);
 }
 
 BOOL CWinFrame::OnSize(UINT nType,long x, long y)

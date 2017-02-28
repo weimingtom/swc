@@ -47,7 +47,7 @@ BEGIN
         MENUITEM "&Open\tCtrl+O",               ID_FILE_OPEN
         MENUITEM "&Save ",                      ID_FILE_SAVE
         MENUITEM SEPARATOR
-        MENUITEM "&Exit",                       IDM_EXIT
+        MENUITEM "&Exit",                       IDM_EXIT_MDI
     END
     POPUP "&View"
     BEGIN
@@ -57,7 +57,7 @@ BEGIN
     END
     POPUP "&Help"
     BEGIN
-        MENUITEM "&About ...",                  IDM_ABOUT
+        MENUITEM "&About ...",                  IDM_ABOUT_MDI
     END
 END
 
@@ -74,7 +74,7 @@ BEGIN
         MENUITEM "&Close",                      ID_FILE_CLOSE
         MENUITEM "&Save",                       ID_FILE_SAVE
         MENUITEM SEPARATOR
-        MENUITEM "&Exit",                       IDM_EXIT
+        MENUITEM "&Exit",                       IDM_EXIT_MDI
     END
     POPUP "&View"
     BEGIN
@@ -91,7 +91,7 @@ BEGIN
     END
     POPUP "&Help"
     BEGIN
-        MENUITEM "&About ...",                  IDM_ABOUT
+        MENUITEM "&About ...",                  IDM_ABOUT_MDI
     END
 END
 
@@ -103,8 +103,8 @@ END
 
 IDC_WINCLASS ACCELERATORS 
 BEGIN
-    "?",            IDM_ABOUT,              ASCII,  ALT
-    "/",            IDM_ABOUT,              ASCII,  ALT
+    "?",            IDM_ABOUT_MDI,              ASCII,  ALT
+    "/",            IDM_ABOUT_MDI,              ASCII,  ALT
 END
 
 
@@ -113,7 +113,7 @@ END
 // Dialog
 //
 
-IDD_ABOUTBOX DIALOG  22, 17, 211, 76
+IDD_ABOUTBOX_MDI DIALOG  22, 17, 211, 76
 STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
 CAPTION "About"
 FONT 8, "MS Sans Serif"
@@ -207,7 +207,7 @@ IDR_SYSTEMBAR           BITMAP                  "toolbar2.bmp"
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO 
 BEGIN
-    IDD_ABOUTBOX, DIALOG
+    IDD_ABOUTBOX_MDI, DIALOG
     BEGIN
         RIGHTMARGIN, 210
         BOTTOMMARGIN, 74
@@ -223,7 +223,7 @@ END
 
 STRINGTABLE 
 BEGIN
-    IDS_APP_TITLE           "SWC MDI"
+    IDS_APP_TITLE_MDI           "SWC MDI"
     IDS_HELLO               "Hello World!"
     IDC_WINCLASS            "SWC"
 END

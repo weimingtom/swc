@@ -49,7 +49,7 @@ protected:
 		m_TreeResource.InsertItem (_T("IDB_BUILD"), 7, 7, hBit);
 		m_TreeResource.InsertItem (_T("IDB_EDITTOOLBAR"), 7, 7, hBit);
 		m_TreeResource.InsertItem (_T("IDB_MAINTOOLBAR"), 7, 7, hBit);
-		m_TreeResource.InsertItem (_T("IDD_ABOUTBOX"), 9, 9, hDial);
+		m_TreeResource.InsertItem (_T("IDD_ABOUTBOX_MDI"), 9, 9, hDial);
 		m_TreeResource.InsertItem (_T("IDI_SMALL"), 10, 10, hIcon);
 		m_TreeResource.InsertItem (_T("IDI_BASEMENU"), 11, 11, hMenu);
 		m_TreeResource.InsertItem (_T("IDI_MENUHELLO"), 11, 11, hMenu);

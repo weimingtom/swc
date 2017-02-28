@@ -159,7 +159,7 @@ public:
 	void OnAbout(WPARAM wParam, LPARAM lParam, HWND hWnd)
 	{
 		CAbout cb;
-		cb.DoModal(this,(LPCTSTR)IDD_ABOUTBOX);
+		cb.DoModal(this,(LPCTSTR)IDD_ABOUTBOX_MDI);
 	}
 
 	void OnTitle(WPARAM wParam, LPARAM lParam, HWND hWnd)
@@ -184,11 +184,11 @@ BEGIN_MSG_MAP()
 	 ON_WM_SIZE(OnSize) 
 	 ON_COMMAND(ID_WINDOW_CASCADE,Cascade)
 	 ON_COMMAND(ID_TOOLBAR,OnToolBar)
-	 ON_COMMAND(IDM_EXIT,OnExit)
+	 ON_COMMAND(IDM_EXIT_MDI,OnExit)
 	 ON_COMMAND(ID_FILE_CLOSE,OnFileClose)
 	 ON_COMMAND(ID_FILE_OPEN,OnFileOpen)
 	 ON_COMMAND(ID_WINDOW_TILE_HORZ,OnTitle)
-	 ON_COMMAND(IDM_ABOUT,OnAbout);
+	 ON_COMMAND(IDM_ABOUT_MDI,OnAbout);
 	 ON_WM_CLOSE(OnClose)
 //	 ON_WM_DRAWITEM(OnDrawItem)
 //	 ON_WM_MEASUREITEM(OnMeasureItem) 

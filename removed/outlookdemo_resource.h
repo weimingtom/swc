@@ -1,11 +1,11 @@
 #pragma once
 
-#define IDC_MYICON                      2
+#define IDC_MYICON_OL                      2
 #define IDD_OUTOOLKDEMO_DIALOG          102
-#define IDD_ABOUTBOX                    103
-#define IDS_APP_TITLE                   103
-#define IDM_ABOUT                       104
-#define IDM_EXIT                        105
+#define IDD_ABOUTBOX_OL                    103
+#define IDS_APP_TITLE_OL                   103
+#define IDM_ABOUT_OL                       104
+#define IDM_EXIT_OL                        105
 #define IDS_HELLO                       106
 #define IDI_OUTOOLKDEMO                 107
 #define IDI_SMALL                       108

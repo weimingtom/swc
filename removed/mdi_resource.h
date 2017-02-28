@@ -1,11 +1,11 @@
 #pragma once
 
-#define IDC_MYICON                      2
-#define IDD_WINCLASS_DIALOG             102
-#define IDD_ABOUTBOX                    103
-#define IDS_APP_TITLE                   103
-#define IDM_ABOUT                       104
-#define IDM_EXIT                        105
+#define IDC_MYICON_MDI                      2
+#define IDD_WINCLASS_DIALOG_MDI             102
+#define IDD_ABOUTBOX_MDI                    103
+#define IDS_APP_TITLE_MDI                   103
+#define IDM_ABOUT_MDI                       104
+#define IDM_EXIT_MDI                        105
 #define IDS_HELLO                       106
 #define IDI_WINCLASS                    107
 #define IDI_SMALL                       108
